@@ -30112,6 +30112,8 @@
 
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 
+	var _reactRouter = __webpack_require__(227);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30138,7 +30140,11 @@
 	                _react2.default.createElement(
 	                    'button',
 	                    { type: 'button', className: 'btn btn-success', style: { width: "150px", height: "50px", marginRight: "5px", borderRadius: "12px" } },
-	                    'Self Learn'
+	                    _react2.default.createElement(
+	                        _reactRouter.Link,
+	                        { to: '/selflearn' },
+	                        ' Self Learn'
+	                    )
 	                ),
 	                _react2.default.createElement(
 	                    'button',
@@ -37535,7 +37541,7 @@
 /* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -37565,12 +37571,47 @@
 	    }
 
 	    _createClass(Selflearn, [{
-	        key: 'render',
+	        key: "render",
 	        value: function render() {
 	            return _react2.default.createElement(
-	                'div',
-	                null,
-	                'aaaaa'
+	                "div",
+	                { className: "vertAlign" },
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "panel-group", style: { width: "200px" } },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "panel panel-primary" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "panel-heading" },
+	                            "Tamil For Kids"
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "panel-body" },
+	                            "Panel Content"
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "panel-group", style: { width: "200px" } },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "panel panel-primary" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "panel-heading" },
+	                            "Sinhala For Kids"
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "panel-body" },
+	                            "Panel Content"
+	                        )
+	                    )
+	                )
 	            );
 	        }
 	    }]);
